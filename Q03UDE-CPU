@@ -1,0 +1,600 @@
+[
+    {
+        "id": "1f506b5ccae1800b",
+        "type": "tab",
+        "label": "NodeRed - QCPU Mitsubishi",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "50c5d7ce23a3322c",
+        "type": "MC Read",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "address": "D100",
+        "addressType": "str",
+        "outputFormat": 0,
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 420,
+        "y": 240,
+        "wires": [
+            [
+                "9ee89606c483818f"
+            ]
+        ]
+    },
+    {
+        "id": "616bf5b599df78d4",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 240,
+        "wires": [
+            [
+                "50c5d7ce23a3322c"
+            ]
+        ]
+    },
+    {
+        "id": "9ee89606c483818f",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2c874d0df3741e2c",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Read_D100_Int16",
+        "info": "",
+        "x": 450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6d883604b60e6f12",
+        "type": "MC Read",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "address": "DREAL110",
+        "addressType": "str",
+        "outputFormat": 0,
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 420,
+        "y": 360,
+        "wires": [
+            [
+                "c431a572b62f77e8"
+            ]
+        ]
+    },
+    {
+        "id": "2e65e93c636c2a15",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "6d883604b60e6f12"
+            ]
+        ]
+    },
+    {
+        "id": "c431a572b62f77e8",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "49f4096b5b27b566",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Read_D110_Floating",
+        "info": "",
+        "x": 460,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3e0478c36fd3cfbd",
+        "type": "MC Read",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "address": "DSTR120,5",
+        "addressType": "str",
+        "outputFormat": 0,
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "3811bd1bf937dced"
+            ]
+        ]
+    },
+    {
+        "id": "4c2e591811be90de",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 480,
+        "wires": [
+            [
+                "3e0478c36fd3cfbd"
+            ]
+        ]
+    },
+    {
+        "id": "3811bd1bf937dced",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d4dddd728dc98267",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Read_D120_String 5 characters",
+        "info": "",
+        "x": 490,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6f47e3d15a62ab6c",
+        "type": "MC Read",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "address": "M100",
+        "addressType": "str",
+        "outputFormat": 0,
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "14039e93ab629bee"
+            ]
+        ]
+    },
+    {
+        "id": "60eaa7b7fb391a86",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 270,
+        "y": 600,
+        "wires": [
+            [
+                "6f47e3d15a62ab6c"
+            ]
+        ]
+    },
+    {
+        "id": "14039e93ab629bee",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "63572eb32eaf9568",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Read_M100_Bit",
+        "info": "",
+        "x": 440,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "721c1a4896af207d",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1150",
+        "payloadType": "num",
+        "x": 830,
+        "y": 240,
+        "wires": [
+            [
+                "acad0ecfab796757"
+            ]
+        ]
+    },
+    {
+        "id": "14d1bd1cda512557",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "dd6e71cf2138ea2c",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Write_D0_Int16",
+        "info": "",
+        "x": 1000,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3a60406d0f0c97fd",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "105.85",
+        "payloadType": "num",
+        "x": 830,
+        "y": 360,
+        "wires": [
+            [
+                "9bdf0ae8c9ef9866"
+            ]
+        ]
+    },
+    {
+        "id": "13ce19ef4e47a0f4",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "2d448e42f0ed2c88",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Write_D10_Floating",
+        "info": "",
+        "x": 1010,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "07b44b19e08907d3",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 830,
+        "y": 480,
+        "wires": [
+            [
+                "c691bfd53cd75892"
+            ]
+        ]
+    },
+    {
+        "id": "a48d6a3c61d7a048",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "56ade5f5f30b1076",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Write_D20_String 5 characters",
+        "info": "",
+        "x": 1050,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b803730ff959295a",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 830,
+        "y": 600,
+        "wires": [
+            [
+                "a5e276afd45460aa"
+            ]
+        ]
+    },
+    {
+        "id": "6574433e96ed862e",
+        "type": "debug",
+        "z": "1f506b5ccae1800b",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a889f4ea4d06441e",
+        "type": "comment",
+        "z": "1f506b5ccae1800b",
+        "name": "Write_M0_Bit",
+        "info": "",
+        "x": 990,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "acad0ecfab796757",
+        "type": "MC Write",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "data": "payload",
+        "address": "D0",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 980,
+        "y": 240,
+        "wires": [
+            [
+                "14d1bd1cda512557"
+            ]
+        ]
+    },
+    {
+        "id": "9bdf0ae8c9ef9866",
+        "type": "MC Write",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "data": "payload",
+        "address": "DREAL10",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 980,
+        "y": 360,
+        "wires": [
+            [
+                "13ce19ef4e47a0f4"
+            ]
+        ]
+    },
+    {
+        "id": "c691bfd53cd75892",
+        "type": "MC Write",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "data": "payload",
+        "address": "DSTR20,5",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 980,
+        "y": 480,
+        "wires": [
+            [
+                "a48d6a3c61d7a048"
+            ]
+        ]
+    },
+    {
+        "id": "a5e276afd45460aa",
+        "type": "MC Write",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "topic": "",
+        "connection": "f099ecc6762028db",
+        "data": "payload",
+        "address": "M0",
+        "addressType": "str",
+        "dataType": "msg",
+        "errorHandling": "throw",
+        "outputs": 1,
+        "x": 980,
+        "y": 600,
+        "wires": [
+            [
+                "6574433e96ed862e"
+            ]
+        ]
+    },
+    {
+        "id": "56f0b22798be00d0",
+        "type": "inject",
+        "z": "1f506b5ccae1800b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 830,
+        "y": 660,
+        "wires": [
+            [
+                "a5e276afd45460aa"
+            ]
+        ]
+    },
+    {
+        "id": "f099ecc6762028db",
+        "type": "MC Protocol Connection",
+        "name": "QCPU",
+        "host": "192.168.3.39",
+        "port": "9000",
+        "protocol": "TCP",
+        "frame": "3E",
+        "plcType": "Q",
+        "ascii": false,
+        "PLCStation": "",
+        "PCStation": "",
+        "PLCModuleNo": "",
+        "network": "",
+        "octalInputOutput": false,
+        "timeout": "1000"
+    }
+]
